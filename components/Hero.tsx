@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
         <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-4 text-slate-600 dark:text-dark-subtext">
           <div className="flex items-center gap-2">
             <MapPinIcon className="w-5 h-5 text-brand-primary" />
-            <span>Casablanca, Maroc</span>
+            <span>Maroc</span>
           </div>
           <a href="mailto:abdelhamidjaafar3@gmail.com" className="flex items-center gap-2 hover:text-brand-primary transition-colors">
             <MailIcon className="w-5 h-5" />
