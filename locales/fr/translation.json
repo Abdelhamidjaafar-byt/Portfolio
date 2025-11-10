@@ -1,0 +1,129 @@
+{
+  "hero": {
+    "title": "Ingénieur conception et développement",
+    "description": "Ingénieur logiciel passionné, animé par une soif constante d'apprentissage et de perfectionnement. Curieux de nature, je m'efforce de comprendre en profondeur les principes et les mécanismes sous-jacents à chaque solution ou concept.",
+    "location": "Maroc"
+  },
+  "header": {
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "education": "Éducation",
+    "contact": "Contact"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Je suis toujours ouvert à de nouvelles opportunités et collaborations. N'hésitez pas à me contacter."
+  },
+  "footer": {
+    "text": "2024 © Abdelhamid JAAFAR. Tous droits réservés."
+  },
+  "skills": {
+    "title": "Compétences",
+    "categories": {
+      "Langages de programmation": ["JavaScript", "TypeScript", "Java"],
+      "Frameworks et bibliothèques": ["React.js", "Next.js", "Angular", "Redux", "Zustand", "Spring Boot", "Spring MVC", "Hibernate", "D3.js", "jQuery", "Material UI", "Bootstrap"],
+      "Bases de Données": ["MySQL", "PostgreSQL", "MongoDB"],
+      "Autres technologies": ["HTML5", "CSS3", "SASS", "SCSS", "Git", "GraphQL", "REST", "Apollo", "Axios", "Azure DevOps"]
+    }
+  },
+  "education": {
+    "title": "Éducation",
+    "data": [
+      {
+        "institution": "ENSIAS",
+        "degree": "Ingénieur d'État",
+        "field": "Ingénierie de Web et Informatique Mobile",
+        "period": "2019 - 2022",
+        "location": "Rabat, Maroc"
+      },
+      {
+        "institution": "CPGE Omar Ibn Abdelaziz",
+        "degree": "Classes Préparatoires aux Grandes Écoles",
+        "field": "Technologie et Sciences de l'Industrie",
+        "period": "2016 - 2019",
+        "location": "Oujda, Maroc"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "data": [
+      {
+        "company": "BCP | MAMDA",
+        "role": "Ingénieur Développement Frontend Freelance",
+        "period": "Octobre 2024 - Présent",
+        "location": "Rabat, Maroc (Remote)",
+        "description": [
+          "Création d'une plateforme d'investissement.",
+          "Développement de microservices pour la gestion des données.",
+          "Développement de composants d'interface utilisateur réutilisables et modulaires avec React.js, et mise en œuvre de Redux.js pour tous les composants React.js."
+        ],
+        "tech": ["JavaScript", "TypeScript", "React.js", "HTML5", "CSS3", "Redux", "Zustand", "Apollo", "Git"]
+      },
+      {
+        "company": "Acentium | RainaCorp S.A.R.L",
+        "role": "Ingénieur Développement Frontend",
+        "period": "Novembre 2022 - Septembre 2024",
+        "location": "Boston, USA (Remote)",
+        "description": [
+          "Maintenance et refactorisation d'un projet Angular existant, ajout de nouveaux composants UI, notamment un graphe en D3.js.",
+          "Ajout d'un thème sombre pour plusieurs composants.",
+          "Développement de composants d'interface utilisateur réutilisables et modulaires avec React.js, et mise en œuvre de Redux.js.",
+          "Création et maintenance d'une application React.js agissant comme un conteneur ou un sandbox pour d'autres applications React.",
+          "Création d'un composant UI de recherche de périphériques matériels avec filtrage, tri, et tableau à défilement infini."
+        ],
+        "tech": ["JavaScript", "TypeScript", "React.js", "Angular", "HTML5", "CSS3", "Redux", "Zustand", "Apollo", "GraphQL", "D3.js", "Azure DevOps", "Git"]
+      },
+      {
+        "company": "RIDE-CREDIT",
+        "role": "Ingénieur Stagiaire en Développement Logiciel (PFE)",
+        "period": "Février 2022 - Octobre 2022",
+        "location": "Rabat, Maroc",
+        "description": [
+          "Développement d'une assemblée marocaine intelligente pour la gouvernance.",
+          "Mise en place d'un système d'examination des compétences et de recrutement sous forme de challenges.",
+          "Création d'un support de formation continue pour les fonctionnaires.",
+          "Développement d'une carte interactive en temps réel pour la visualisation des changements climatiques et données régionales."
+        ],
+        "tech": ["PHP", "Laravel", "React.js", "JavaScript", "MySQL", "HTML5", "CSS3", "SYSMON", "Angular"]
+      },
+      {
+        "company": "WaveConnect",
+        "role": "Ingénieur Stagiaire en Développement Logiciel",
+        "period": "Juillet 2021 - Septembre 2021",
+        "location": "Paris, France (Remote)",
+        "description": [
+          "Création d'une application web pour la génération de templates de pages vitrines, comprenant un système d'authentification et la gestion des pages et composants."
+        ],
+        "tech": ["React.js", "JavaScript", "HTML5", "CSS3", "Bootstrap"]
+      },
+      {
+        "company": "Province de Figuig",
+        "role": "Ingénieur Stagiaire en Développement Logiciel",
+        "period": "Juillet 2020 – Août 2020",
+        "location": "Bouarfa, Maroc",
+        "description": [
+          "Création d'une application web pour la gestion des bureaux d'ordre, avec système d'authentification, front office citoyen et back office administration."
+        ],
+        "tech": ["PHP", "Laravel", "React.js", "JavaScript", "HTML5", "CSS3", "Bootstrap"]
+      }
+    ]
+  },
+  "languages": {
+    "title": "Langues",
+    "data": [
+      {
+        "language": "Français",
+        "level": "Maîtrise professionnelle"
+      },
+      {
+        "language": "Anglais",
+        "level": "Maîtrise professionnelle"
+      },
+      {
+        "language": "Arabe",
+        "level": "Langue maternelle"
+      }
+    ]
+  }
+}

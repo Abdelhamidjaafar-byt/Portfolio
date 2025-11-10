@@ -1,24 +1,16 @@
 import React from 'react';
 import Section from './Section';
+import { useTranslation } from 'react-i18next';
 
-const educationData = [
-  {
-    institution: "ENSIAS",
-    degree: "Ingénieur d'État",
-    field: "Ingénierie de Web et Informatique Mobile",
-    period: "2019 - 2022",
-    location: "Rabat, Maroc"
-  },
-  {
-    institution: "CPGE Omar Ibn Abdelaziz",
-    degree: "Classes Préparatoires aux Grandes Écoles",
-    field: "Technologie et Sciences de l'Industrie",
-    period: "2016 - 2019",
-    location: "Oujda, Maroc"
-  }
-];
+type EducationData = {
+  institution: string;
+  degree: string;
+  field: string;
+  period: string;
+  location: string;
+};
 
-const EducationCard: React.FC<typeof educationData[0]> = ({ institution, degree, field, period, location }) => (
+const EducationCard: React.FC<EducationData> = ({ institution, degree, field, period, location }) => (
     <div className="bg-slate-50 dark:bg-dark-card p-6 rounded-lg shadow-lg hover:shadow-brand-primary/20 transition-shadow duration-300">
         <div className="flex justify-between items-start">
             <div>
@@ -33,8 +25,11 @@ const EducationCard: React.FC<typeof educationData[0]> = ({ institution, degree,
 );
 
 const Education: React.FC = () => {
+  const { t } = useTranslation();
+  const educationData = t('education.data', { returnObjects: true }) as EducationData[];
+
   return (
-    <Section title="Éducation" id="education">
+    <Section title={t('education.title')} id="education">
       <div className="grid md:grid-cols-2 gap-8">
         {educationData.map((edu, index) => <EducationCard key={index} {...edu} />)}
       </div>

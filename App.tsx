@@ -6,8 +6,10 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Languages from './components/Languages';
 import Contact from './components/Contact';
+import { useTranslation } from 'react-i18next';
 
 const App: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-white dark:bg-dark-bg text-slate-800 dark:text-dark-text font-sans antialiased transition-colors duration-300">
       <Header />
@@ -22,7 +24,7 @@ const App: React.FC = () => {
         </div>
       </main>
       <footer className="text-center py-6 text-slate-500 dark:text-dark-subtext text-sm">
-        <p>2024 &copy; Abdelhamid JAAFAR. Tous droits réservés.</p>
+        <p>{t('footer.text')}</p>
       </footer>
     </div>
   );

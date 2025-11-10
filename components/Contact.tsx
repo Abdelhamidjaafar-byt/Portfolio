@@ -1,13 +1,16 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Section from './Section';
 import { MailIcon, PhoneIcon, GithubIcon, LinkedinIcon } from './icons';
 
 const Contact: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
-    <Section title="Contact" id="contact">
+    <Section title={t('contact.title')} id="contact">
       <div className="text-center max-w-2xl mx-auto">
         <p className="text-lg text-slate-600 dark:text-dark-subtext mb-8">
-          Je suis toujours ouvert à de nouvelles opportunités et collaborations. N'hésitez pas à me contacter.
+          {t('contact.description')}
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mb-12">
             <a href="mailto:abdelhamidjaafar3@gmail.com" className="inline-flex items-center gap-3 bg-slate-100 dark:bg-dark-card px-6 py-3 rounded-lg hover:bg-slate-200 dark:hover:bg-brand-secondary transition-colors font-semibold text-slate-800 dark:text-dark-text">

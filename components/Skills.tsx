@@ -1,12 +1,6 @@
 import React from 'react';
 import Section from './Section';
-
-const skillsData = {
-  "Langages de programmation": ["JavaScript", "TypeScript", "Java"],
-  "Frameworks et bibliothèques": ["React.js", "Next.js", "Angular", "Redux", "Zustand", "Spring Boot", "Spring MVC", "Hibernate", "D3.js", "jQuery", "Material UI", "Bootstrap"],
-  "Bases de Données": ["MySQL", "PostgreSQL", "MongoDB"],
-  "Autres technologies": ["HTML5", "CSS3", "SASS", "SCSS", "Git", "GraphQL", "REST", "Apollo", "Axios", "Azure DevOps"],
-};
+import { useTranslation } from 'react-i18next';
 
 const SkillCard: React.FC<{ name: string }> = ({ name }) => (
     <div className="bg-slate-100 dark:bg-dark-card p-3 rounded-lg text-center text-slate-700 dark:text-dark-text font-medium shadow-md hover:shadow-brand-primary/20 hover:-translate-y-1 transition-all duration-300">
@@ -15,8 +9,11 @@ const SkillCard: React.FC<{ name: string }> = ({ name }) => (
 );
 
 const Skills: React.FC = () => {
+  const { t } = useTranslation();
+  const skillsData = t('skills.categories', { returnObjects: true }) as Record<string, string[]>;
+
   return (
-    <Section title="Compétences" id="skills">
+    <Section title={t('skills.title')} id="skills">
         <div className="space-y-8">
             {Object.entries(skillsData).map(([category, skills]) => (
                 <div key={category}>
