@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
         <div className="relative w-64 h-64 md:w-80 md:h-80">
           <div className="absolute inset-0 bg-brand-primary rounded-full transform rotate-6"></div>
           <img
-            src="../res/me.png"
+            src="../res/mee.png"
             alt="Abdelhamid JAAFAR"
             className="relative w-full h-full object-cover rounded-full border-4 border-white dark:border-dark-card shadow-lg"
           />
